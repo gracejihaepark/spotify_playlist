@@ -17,7 +17,7 @@ sp = spotipy.Spotify(auth=token)
 
 
 # list of artists (up to five)
-artists = ['peakboy', 'ph-1', 'haon']
+artists = ['', '', '', '', ''] # examples of up to five
 
 # search artist and get their id(s)
 artist_id = []
