@@ -18,6 +18,8 @@ sp = spotipy.Spotify(auth=token)
 
 # list of artists (up to five)
 artists = ['', '', '', '', ''] # examples of up to five
+# artists = ['j. cole', 'emotional oranges', 'beethoven']
+
 
 # search artist and get their id(s)
 artist_id = []
