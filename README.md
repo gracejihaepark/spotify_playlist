@@ -8,12 +8,13 @@ Create Spotify playlists similar to Spotify radio, but with multiple artist inpu
 ## Method
 1. Artist IDs are the most important in searching for similar/recommended artists/songs
   - Each searched artist outputs a complex dictionary of dictionaries and lists that need to be parsed in order to get the artist's ID
-  '''
+  ```
+  # search artist(s) and get their ID(s)
   artist_id = []
   for artist in artists:
       search_artist = sp.search(q=artist, type='artist')
       artist_id.append(search_artist['artists']['items'][0]['id'])
-  '''
+  ```
   (An example of how I needed to parse these heavily nested dictionaries and lists.)
 
 2. With the artist IDs now, the recommended module can be used to find recommended songs for the artist
